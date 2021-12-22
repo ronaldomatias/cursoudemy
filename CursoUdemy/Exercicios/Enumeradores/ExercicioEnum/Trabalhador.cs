@@ -27,33 +27,20 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
             listaContratos.Add(contrato);
         }
         
-        private double somarContratos(List<Contrato> listaContratosDoMes)
-        {
-            double montanteValorContratos = 0;
-            foreach (Contrato c in listaContratosDoMes)
-            {
-                montanteValorContratos += c.valorDoContrato();
-            }
-
-            double rendimentoMensal = montanteValorContratos + salarioBase;
-            return rendimentoMensal;
-        }
-
-        public double obterContratosDoMes(int mesPesquisado)
+        public double obterMontanteContratosMensal(int mesPesquisado)
         {
             List<Contrato> listaContratosDoMes = new List<Contrato>();
-            
-            foreach (Contrato c in listaContratos)
-            {
-                int mesDataContrato = c.Data.Month;
+            double montanteContratosMensal = 0;
 
-                if (mesDataContrato == mesPesquisado)
+            foreach (Contrato contrato in listaContratos)
+            {
+                if (contrato.Data.Month == mesPesquisado)
                 {
-                    listaContratosDoMes.Add(c);
+                    montanteContratosMensal += contrato.valorDoContrato();
                 }
             }
-            
-            return somarContratos(listaContratosDoMes);
+
+            return montanteContratosMensal + salarioBase;
         }
 
 

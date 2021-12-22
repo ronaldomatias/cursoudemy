@@ -18,7 +18,7 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
             Console.WriteLine("Deseja ver o salário de qual mês?");
             int mes = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(trabalhador.obterContratosDoMes(mes));
+            Console.WriteLine(trabalhador.obterMontanteContratosMensal(mes));
         }
 
         public Trabalhador CadastrarTrabalhador(Trabalhador trabalhador)
@@ -55,11 +55,6 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
                 trabalhador.addContrato(contrato);
             }
         }
-
-
-
-
-
 
     }
 }

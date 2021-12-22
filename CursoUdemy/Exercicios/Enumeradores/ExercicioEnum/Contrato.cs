@@ -8,13 +8,13 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
 {
     public class Contrato
     {
-        //ATRIBUTOS
+        // ATRIBUTOS
         private DateTime data;
         private double valorPorHora;
         private double horasTrabalhadas;
 
 
-        // MÉTODOS
+        // METODOS
         public double valorDoContrato()
         {
             return horasTrabalhadas * valorPorHora;
