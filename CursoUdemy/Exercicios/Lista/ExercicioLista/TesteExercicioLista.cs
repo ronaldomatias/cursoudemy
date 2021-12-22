@@ -48,22 +48,23 @@ namespace CursoUdemy.Classes.Lista
             Console.WriteLine("Insira o ID do funcionário que terá aumento: ");
             int ide = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Insira a porcentagem de aumento: ");
-            double porcentagem = double.Parse(Console.ReadLine());
-
-            aumentarSalarioFuncionario(ide, porcentagem);
-        }
-
-        public void aumentarSalarioFuncionario(int ide, double porcentagem)
-        {
-            Funcionario f = listaFunc.Find(x => x.id == ide);
-
-            if (f == null){
+            Funcionario funcionario = buscarFuncionario(ide);
+            
+            if (funcionario == null){
                 Console.WriteLine("ID não existe!");
             }
             else{
-                f.AumentarSalario(porcentagem);
+                Console.WriteLine("Insira a porcentagem de aumento: ");
+                double porcentagem = double.Parse(Console.ReadLine());
+                funcionario.AumentarSalario(porcentagem);
             }
+        }
+
+        public Funcionario buscarFuncionario(int ide)
+        {
+            Funcionario f = listaFunc.Find(x => x.id == ide);
+
+            return f;
         }
 
     }
