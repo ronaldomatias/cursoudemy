@@ -14,7 +14,6 @@ namespace CursoUdemy.Classes.Lista
             lista.Add("Oswald");
             lista.Insert(2, "Tey"); // INSERINDO NA POSIÇÃO 2
 
-
             // BUSCAR A POSIÇÃO DA PRIMEIRA MARY DA LISTA != (FindLastIndex)
             int posicao = lista.FindIndex(x => x == "Mary");
             Console.WriteLine($"Mary está na posição: {posicao} da lista.");

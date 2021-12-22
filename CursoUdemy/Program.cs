@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CursoUdemy.Classes.Lista;
+using CursoUdemy.Exercicios.Enumeradores.ExercicioEnum;
 
 namespace CursoUdemy
 {
@@ -12,8 +12,8 @@ namespace CursoUdemy
     {
         static void Main(string[] args)
         {
-            TesteExercicioLista te = new TesteExercicioLista();
-            te.teste();
+            Teste t = new Teste();
+            t.teste();
 
             Console.Read();
         }

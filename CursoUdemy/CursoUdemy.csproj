@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Cargo.cs" />
+    <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Contrato.cs" />
+    <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Teste.cs" />
+    <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Trabalhador.cs" />
     <Compile Include="Exercicios\ExercicioMaiorValor\MaiorValor.cs" />
     <Compile Include="Exercicios\ExercicioMaiorValor\TesteMaiorValor.cs" />
     <Compile Include="Exercicios\Construtores\Construtores.cs" />
