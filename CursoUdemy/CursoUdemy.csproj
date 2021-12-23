@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicios\Data\ManipulandoDatas.cs" />
     <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Cargo.cs" />
     <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Contrato.cs" />
     <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Teste.cs" />

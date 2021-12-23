@@ -37,8 +37,21 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
             get { return horasTrabalhadas; }
             set { horasTrabalhadas = value; }
         }
-        
 
+
+        // UTILIZANDO O OVERRIDE PARA PRINTAR A CLASSE CONTRATO E CONCATENANDO UTILIZANDO STRINGBUILDER.APPEND
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Data do contrato:");
+            sb.AppendLine(data.ToString("dd/MM"));
+            sb.Append("Valor da hora:");
+            sb.AppendLine(valorPorHora.ToString());
+            sb.Append("Horas trabalhadas:");
+            sb.AppendLine(horasTrabalhadas.ToString());
+
+            return sb.ToString();
+        }
 
 
 

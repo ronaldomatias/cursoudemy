@@ -27,7 +27,7 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
             listaContratos.Add(contrato);
         }
         
-        public double obterMontanteContratosMensal(int mesPesquisado)
+        public double ObterMontanteContratosMensal(int mesPesquisado)
         {
             List<Contrato> listaContratosDoMes = new List<Contrato>();
             double montanteContratosMensal = 0;
