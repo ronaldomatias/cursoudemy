@@ -39,7 +39,7 @@ namespace CursoUdemy.Exercicios.Enumeradores.ExercicioEnum
 
         public void CadastrarContratos(Trabalhador trabalhador)
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 1; i++)
             {
                 Contrato contrato = new Contrato();
                 Console.WriteLine("Insira as informações do contrato: ");

@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicios\ClasseAbstrata\Pessoa.cs" />
+    <Compile Include="Exercicios\ClasseAbstrata\PessoaFisica.cs" />
+    <Compile Include="Exercicios\ClasseAbstrata\PessoaJuridica.cs" />
+    <Compile Include="Exercicios\ClasseAbstrata\Testes.cs" />
     <Compile Include="Exercicios\Data\ManipulandoDatas.cs" />
     <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Cargo.cs" />
     <Compile Include="Exercicios\Enumeradores\ExercicioEnum\Contrato.cs" />
@@ -56,6 +60,13 @@
     <Compile Include="Exercicios\Lista\TesteLista.cs" />
     <Compile Include="Exercicios\OperacaoTernaria\OperadorTernario.cs" />
     <Compile Include="Exercicios\ManipulandoString\Strings.cs" />
+    <Compile Include="Exercicios\Polimorfismo2\Produto.cs" />
+    <Compile Include="Exercicios\Polimorfismo2\ProdutoImportado.cs" />
+    <Compile Include="Exercicios\Polimorfismo2\ProdutoUsado.cs" />
+    <Compile Include="Exercicios\Polimorfismo2\Testes.cs" />
+    <Compile Include="Exercicios\Polimorfismo\Funcionario.cs" />
+    <Compile Include="Exercicios\Polimorfismo\FuncionarioTerceirizado.cs" />
+    <Compile Include="Exercicios\Polimorfismo\Testes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

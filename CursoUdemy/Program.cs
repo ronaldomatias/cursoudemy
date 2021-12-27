@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CursoUdemy.Exercicios.Enumeradores.ExercicioEnum;
+using CursoUdemy.Exercicios.ClasseAbstrata;
 
 namespace CursoUdemy
 {
@@ -12,7 +12,7 @@ namespace CursoUdemy
     {
         static void Main(string[] args)
         {
-            Teste t = new Teste();
+            Testes t = new Testes();
             t.teste();
 
             Console.Read();
