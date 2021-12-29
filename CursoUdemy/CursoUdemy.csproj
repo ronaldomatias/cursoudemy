@@ -55,6 +55,12 @@
     <Compile Include="Exercicios\ExercicioMaiorValor\MaiorValor.cs" />
     <Compile Include="Exercicios\ExercicioMaiorValor\TesteMaiorValor.cs" />
     <Compile Include="Exercicios\Construtores\Construtores.cs" />
+    <Compile Include="Exercicios\Interfacee\Fatura.cs" />
+    <Compile Include="Exercicios\Interfacee\ImpostoDoBrasil.cs" />
+    <Compile Include="Exercicios\Interfacee\Locacao.cs" />
+    <Compile Include="Exercicios\Interfacee\Imposto.cs" />
+    <Compile Include="Exercicios\Interfacee\Testes.cs" />
+    <Compile Include="Exercicios\Interfacee\Veiculo.cs" />
     <Compile Include="Exercicios\Lista\ExercicioLista\TesteExercicioLista.cs" />
     <Compile Include="Exercicios\Lista\ExercicioLista\Funcionario.cs" />
     <Compile Include="Exercicios\Lista\TesteLista.cs" />
