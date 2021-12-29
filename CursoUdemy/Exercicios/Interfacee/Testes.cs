@@ -28,8 +28,7 @@ namespace CursoUdemy.Exercicios.Interfacee
             DateTime fimLocacao = DateTime.Parse(Console.ReadLine());
 
             Locacao locacao = new Locacao(valorDiario, valorPorHora, veiculo, inicioLocacao, fimLocacao);
-            Imposto imposto = new ImpostoDoBrasil();
-            Fatura fatura = new Fatura(locacao, imposto);
+            Fatura fatura = new Fatura(locacao, new ImpostoDoBrasil());
 
             Console.WriteLine();
             Console.WriteLine("Horas locados:" + locacao.HorasLocadas());
@@ -37,8 +36,8 @@ namespace CursoUdemy.Exercicios.Interfacee
             Console.WriteLine();
             Console.WriteLine("Fatura:");
             Console.WriteLine("Valor locação: " + fatura.ValorLocacao);
-            Console.WriteLine("Imposto: " + imposto.TaxaImposto(fatura.ValorLocacao));
-            Console.WriteLine("Valor total: " + fatura.TotalPagamento);
+            Console.WriteLine("Impostos: " + fatura.ValorImposto);
+            Console.WriteLine("Valor total: " + fatura.TotalAPagar);
 
 
 

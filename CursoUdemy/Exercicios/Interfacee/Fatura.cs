@@ -10,8 +10,9 @@ namespace CursoUdemy.Exercicios.Interfacee
     {
         public Locacao Locacao { get; set; }
         public Imposto Imposto { get; set; }
-        public double TotalPagamento { get; set; }
+        public double TotalAPagar { get; set; }
         public double ValorLocacao { get; set; }
+        public double ValorImposto { get { return Imposto.TaxaImposto(ValorLocacao);}}
 
 
         public Fatura(Locacao locacao, Imposto imposto)
@@ -19,40 +20,23 @@ namespace CursoUdemy.Exercicios.Interfacee
             Locacao = locacao;
             Imposto = imposto;
 
-            DeterminarValorLocacao();
-            TotalAPagar();
+            CalcularFatura();
         }
 
-        public void DeterminarValorLocacao()
+
+        public void CalcularFatura()
         {
             if (Locacao.HorasLocadas() < 12)
             {
                 ValorLocacao = Locacao.HorasLocadas() * Locacao.ValorPorHora;
+                TotalAPagar = ValorLocacao + ValorImposto;
             }
-            else
-            {
+            else{
                 ValorLocacao = Locacao.DiasLocados() * Locacao.ValorDiario;
+                TotalAPagar = ValorLocacao + ValorImposto;
             }
         }
 
-        public void TotalAPagar()
-        {
-            if (ValorLocacao > 100)
-            {
-                TotalPagamento = ValorLocacao + Imposto.TaxaImposto(ValorLocacao);
-            }
-            else
-            {
-                TotalPagamento = ValorLocacao + Imposto.TaxaImposto(ValorLocacao);
-            }
-        }
 
-        
-    
     }
-
-
-
-
-
 }

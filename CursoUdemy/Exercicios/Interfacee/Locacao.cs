@@ -14,6 +14,7 @@ namespace CursoUdemy.Exercicios.Interfacee
         public DateTime InicioLocacao { get; set; }
         public DateTime FimLocacao { get; set; }
 
+
         public Locacao(double valorDiario, double valorPorHora, Veiculo veiculo, DateTime inicioLocacao, DateTime fimLocacao)
         {
             ValorDiario = valorDiario;
@@ -23,6 +24,8 @@ namespace CursoUdemy.Exercicios.Interfacee
             FimLocacao = fimLocacao;
         }
     
+
+
         public double DiasLocados()
         {
             TimeSpan tempoLocacao = FimLocacao.Subtract(InicioLocacao);
