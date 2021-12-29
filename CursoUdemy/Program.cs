@@ -12,9 +12,11 @@ namespace CursoUdemy
     {
         static void Main(string[] args)
         {
-            Testes t = new Testes();
-            t.teste();
+            DateTime dt = new DateTime(2015, 05, 10);
 
+            Console.WriteLine(dt.Date.AddMonths(2));
+
+            Console.WriteLine(dt);
             Console.Read();
         }
   
