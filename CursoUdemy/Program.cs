@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CursoUdemy.Exercicios.Interfacee;
+using CursoUdemy.Exercicios.ManipulandoString.ExercicioCSV;
 
 namespace CursoUdemy
 {
@@ -12,11 +12,10 @@ namespace CursoUdemy
     {
         static void Main(string[] args)
         {
-            DateTime dt = new DateTime(2015, 05, 10);
 
-            Console.WriteLine(dt.Date.AddMonths(2));
+            Testes t = new Testes();
+            t.teste();
 
-            Console.WriteLine(dt);
             Console.Read();
         }
   
