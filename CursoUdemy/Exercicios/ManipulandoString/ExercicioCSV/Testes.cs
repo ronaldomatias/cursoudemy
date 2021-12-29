@@ -23,6 +23,7 @@ namespace CursoUdemy.Exercicios.ManipulandoString.ExercicioCSV
                     funcionarios.Add(new Funcionario(vetor[0], vetor[1]));
                 }
 
+                funcionarios.Sort();
                 foreach(Funcionario f in funcionarios)
                 {
                     Console.WriteLine(f.Nome +" "+ f.Email);
