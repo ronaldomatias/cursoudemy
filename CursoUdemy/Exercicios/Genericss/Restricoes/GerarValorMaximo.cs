@@ -8,21 +8,18 @@ namespace CursoUdemy.Exercicios.Genericss.Restricoes
 {
     class GerarValorMaximo
     {
-        List<int> Lista;
 
-        public int ObterMaiorValor(List<int> lista)
+        public T ObterMaiorValor<T>(List<T> lista) where T : IComparable
         {
-            this.Lista = lista;
-
             if(lista.Count == 0)
             {
                 throw new Exception();
             }
 
-            int maior = lista[0];
+            T maior = lista[0];
             for(int i=0; i < lista.Count; i++)
             {
-                if (lista[i] > maior)
+                if (lista[i].CompareTo(maior) > 0)
                 {
                     maior = lista[i];
                 }

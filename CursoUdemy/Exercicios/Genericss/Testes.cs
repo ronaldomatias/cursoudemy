@@ -41,11 +41,11 @@ namespace CursoUdemy.Exercicios.Genericss
     
         public void testeRestricoes()
         {
-            List<int> lista = new List<int>() { 1, 5, 15, 12 };
+            List<string> lista = new List<string>() { "o", "oi", "oiii", "oii" };
 
             GerarValorMaximo gvm = new GerarValorMaximo();
 
-            int maior = gvm.ObterMaiorValor(lista);
+            string maior = gvm.ObterMaiorValor(lista);
 
             Console.WriteLine(maior);
         }
