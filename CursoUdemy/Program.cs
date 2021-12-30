@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CursoUdemy.Exercicios.ManipulandoString.ExercicioCSV;
+using CursoUdemy.Exercicios.Genericss;
 
 namespace CursoUdemy
 {
@@ -15,6 +15,7 @@ namespace CursoUdemy
 
             Testes t = new Testes();
             t.teste();
+
 
             Console.Read();
         }

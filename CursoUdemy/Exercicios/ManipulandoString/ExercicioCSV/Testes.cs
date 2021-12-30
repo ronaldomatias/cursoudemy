@@ -12,7 +12,7 @@ namespace CursoUdemy.Exercicios.ManipulandoString.ExercicioCSV
 
         public void teste()
         {
-            string endereco = @"C:\Users\ronal\OneDrive\Documentos\emails.csv";
+            string endereco = @"C:\Users\ronal\OneDrive\Documentos\emails.csv"; // salvar como .csv
 
             using (StreamReader sr = File.OpenText(endereco))
             {
@@ -24,14 +24,14 @@ namespace CursoUdemy.Exercicios.ManipulandoString.ExercicioCSV
                 }
 
                 funcionarios.Sort();
-                foreach(Funcionario f in funcionarios)
+                foreach (Funcionario f in funcionarios)
                 {
-                    Console.WriteLine(f.Nome +" "+ f.Email);
+                    Console.WriteLine(f.Nome + " " + f.Email);
                 }
-                
+
 
             }
         }
 
-        }
     }
+}
