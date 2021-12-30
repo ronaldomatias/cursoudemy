@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoUdemy.Exercicios.Polimorfismo2
 {
-    internal class Produto
+    internal class Produto : IComparable
     {
         public string Nome { get; set; }
         public double Preco { get; set; }
@@ -22,5 +22,16 @@ namespace CursoUdemy.Exercicios.Polimorfismo2
             return Nome + " " + Preco;
         }
 
+        public int CompareTo(object obj)
+        {
+            if(!(obj is Produto))
+            {
+                throw new ArgumentException("Você não está comparando um produto!");
+            }
+
+            Produto outro = obj as Produto;
+
+            return Preco.CompareTo(outro.Preco);
+        }
     }
 }

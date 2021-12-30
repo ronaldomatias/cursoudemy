@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CursoUdemy.Exercicios.Genericss.Restricoes;
+using CursoUdemy.Exercicios.Polimorfismo2;
 
 namespace CursoUdemy.Exercicios.Genericss
 {
@@ -41,13 +42,23 @@ namespace CursoUdemy.Exercicios.Genericss
     
         public void testeRestricoes()
         {
-            List<string> lista = new List<string>() { "o", "oi", "oiii", "oii" };
+            List<Produto> listaProdutos = new List<Produto>();
+            for (int i=0; i< 3; i++)
+            {
+                Console.WriteLine("Nome:");
+                string nome = Console.ReadLine();
+
+                Console.WriteLine("Preço:");
+                double preco = double.Parse(Console.ReadLine());
+
+                listaProdutos.Add(new Produto(nome, preco));
+            }
 
             GerarValorMaximo gvm = new GerarValorMaximo();
 
-            string maior = gvm.ObterMaiorValor(lista);
+            Produto produtoMaisCaro = gvm.ObterMaiorValor(listaProdutos);
 
-            Console.WriteLine(maior);
+            Console.WriteLine(produtoMaisCaro.Nome +" "+ produtoMaisCaro.Preco);
         }
     
     }
