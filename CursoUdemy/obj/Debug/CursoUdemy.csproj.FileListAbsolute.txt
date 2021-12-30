@@ -2,7 +2,6 @@ C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\b
 C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\bin\Debug\CursoUdemy.exe
 C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\bin\Debug\CursoUdemy.pdb
 C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\obj\Debug\CursoUdemy.csproj.AssemblyReference.cache
-C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\obj\Debug\CursoUdemy.csproj.SuggestedBindingRedirects.cache
 C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\obj\Debug\CursoUdemy.csproj.CoreCompileInputs.cache
 C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\obj\Debug\CursoUdemy.exe
 C:\Users\ronal\OneDrive\Documentos\Project VS\CursoUdemy\CursoUdemy\CursoUdemy\obj\Debug\CursoUdemy.pdb

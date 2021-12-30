@@ -56,6 +56,7 @@
     <Compile Include="Exercicios\ExercicioMaiorValor\TesteMaiorValor.cs" />
     <Compile Include="Exercicios\Construtores\Construtores.cs" />
     <Compile Include="Exercicios\Genericss\MostrarValores.cs" />
+    <Compile Include="Exercicios\Genericss\Restricoes\GerarValorMaximo.cs" />
     <Compile Include="Exercicios\Genericss\Testes.cs" />
     <Compile Include="Exercicios\Interfacee\Fatura.cs" />
     <Compile Include="Exercicios\Interfacee\ImpostoDoBrasil.cs" />

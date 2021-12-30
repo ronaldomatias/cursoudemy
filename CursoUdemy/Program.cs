@@ -14,7 +14,7 @@ namespace CursoUdemy
         {
 
             Testes t = new Testes();
-            t.teste();
+            t.testeRestricoes();
 
 
             Console.Read();

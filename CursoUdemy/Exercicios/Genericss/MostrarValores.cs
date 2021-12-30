@@ -9,7 +9,7 @@ namespace CursoUdemy.Exercicios.Genericss
 {
     class MostrarValores <T>
     {
-        T[] lista = new T[10];
+        public T[] lista = new T[10];
         int contador = 0;
 
         public MostrarValores()
